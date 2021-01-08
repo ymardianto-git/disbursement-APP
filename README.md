@@ -37,11 +37,11 @@ $ npm run prod
 Step 3
 Setting up config vars on .env file 
 ```
-APP_URL
-APP_NAME=
-APP_ENV=
-APP_KEY=
-APP_DEBUG=
+
+APP_NAME=Disbursement App
+APP_ENV=production
+APP_KEY=base64:epjkN4hsVq3bc9uBH+6e4WVtif/ayC6h4WrdDKZOG78=
+APP_DEBUG=false
 APP_URL=
 
 DB_CONNECTION=
