@@ -13,7 +13,38 @@ This web application deployable on heroku
 - [Laravel 7](https://github.com/laravel/framework)
 - [jQuery DataTables v1.10.x](http://datatables.net/)
 
-## Pre Requisite 
+
+## Install on Heroku
+
+Create new app on heroku. Connect to this source github and deploy
+
+Setting up config vars on .env file after github source connected to DB
+```
+
+APP_NAME=Disbursement App
+APP_ENV=production
+APP_KEY=base64:epjkN4hsVq3bc9uBH+6e4WVtif/ayC6h4WrdDKZOG78=
+APP_DEBUG=false
+APP_URL={URL App Here}
+
+DB_CONNECTION= {DB_CONNECTION (mysql, postgree)}
+DB_HOST= {DB HOST here}
+DB_PORT=  {DB PORT here}
+DB_DATABASE= {DB DATABASE here}
+DB_USERNAME= {DB USERNAME here}
+DB_PASSWORD= {DB PASSWORD here}
+```
+
+Screenshot config vars on heroku
+<img src="https://i.postimg.cc/mkP9fKVr/Screen-Shot-2021-01-08-at-13-02-37.png" />
+
+Run db migration 
+```
+heroku run php artisan migrate 
+```
+
+
+## Pre Requisite (Non Heroku)
 
 
 Step 1 
@@ -42,14 +73,14 @@ APP_NAME=Disbursement App
 APP_ENV=production
 APP_KEY=base64:epjkN4hsVq3bc9uBH+6e4WVtif/ayC6h4WrdDKZOG78=
 APP_DEBUG=false
-APP_URL=
+APP_URL={URL App Here}
 
-DB_CONNECTION=
-DB_HOST=
-DB_PORT=
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+DB_CONNECTION= {DB_CONNECTION (mysql, postgree)}
+DB_HOST= {DB HOST here}
+DB_PORT=  {DB PORT here}
+DB_DATABASE= {DB DATABASE here}
+DB_USERNAME= {DB USERNAME here}
+DB_PASSWORD= {DB PASSWORD here}
 ```
 
 
